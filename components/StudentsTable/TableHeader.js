@@ -24,8 +24,7 @@ const TableHeader = ({ search, setSearch, updated, setUpdated }) => {
   const createQueryString = useCallback(
     (name, value) => {
       const params = new URLSearchParams(searchParams);
-      params.set(name, value);
-
+      value ? params.set(name, value) : params.delete(name);
       return params.toString();
     },
     [searchParams]
@@ -53,9 +52,9 @@ const TableHeader = ({ search, setSearch, updated, setUpdated }) => {
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       // 👇 Get input value
-      router.push(
-        pathname + "?" + `${search ? createQueryString("q", search) : ""}`
-      );
+      search
+        ? router.push(pathname + "?" + createQueryString("q", search))
+        : router.push(pathname + "?" + createQueryString("q"));
       setUpdated(search);
     }
   };

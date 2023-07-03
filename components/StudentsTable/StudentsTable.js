@@ -39,7 +39,7 @@ const StudentsTable = () => {
   };
   useEffect(() => {
     fecthUsers();
-  }, [limit, skip]);
+  }, [limit, skip, updated]);
 
   /* edit user */
 
@@ -107,7 +107,7 @@ const StudentsTable = () => {
         setLoading(false);
       }
     };
-    (updated || !search) && fetchSearchvalue();
+    (updated || search) && fetchSearchvalue();
   }, [updated]);
 
   /* delete user */
