@@ -1,0 +1,58 @@
+.tableFooter__container {
+    display: flex;
+    margin: 20px 30px;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+}
+
+.tableFooter__pagesSize  {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.30000001192092896px;
+    color: #9FA2B4;
+    margin-right: 30px;
+}
+
+.tableFooter__pagesSize > select {
+    box-sizing: border-box;
+    display: flex;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.30000001192092896px;
+    cursor: pointer;
+}
+
+.tableFooter__pagesSize > select:focus {
+    border:1px #FEAF00 solid;
+    border-radius: 4px;
+    outline: 0 none;
+}
+
+.selectedPagesize {
+    text-align: center;
+}
+
+.tableFooter__total {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: right;
+    color: #9FA2B4;
+}
+
+.tableFooter__arrow {
+    display: flex;
+    gap: 20px;
+}
+
+.tableFooter__arrow > img {
+    cursor: pointer;
+}

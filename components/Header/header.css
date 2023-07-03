@@ -1,0 +1,20 @@
+.header__container {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #fff;
+}
+
+.header__left_arrow_close {
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.header__left_arrow_open {
+    cursor: pointer;
+    transform: rotate(0);
+    transition: 0.5s;
+}

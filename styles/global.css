@@ -1,0 +1,28 @@
+:root {
+  --color-primary: #FEAF00;
+  --color-secondry: #F8D442;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body
+{
+    height: 100%;
+    letter-spacing: 0em;
+}
+
+.root__layout{
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
