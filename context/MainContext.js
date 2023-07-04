@@ -4,8 +4,12 @@ import { createContext, useContext, useState } from "react";
 const MainContext = createContext();
 
 const MainProvider = ({ children }) => {
-  const userInfo = localStorage.getItem("user");
-  const user = JSON.parse(userInfo);
+  let user;
+  if (typeof window !== "undefined") {
+    // Perform localStorage action
+    const userInfo = localStorage.getItem("user");
+    user = JSON.parse(userInfo);
+  }
   const [profil, setProfile] = useState(user);
   const [closeSidebar, setcloseSidebar] = useState(false);
   const values = {

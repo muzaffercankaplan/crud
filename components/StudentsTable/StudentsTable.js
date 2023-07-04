@@ -20,8 +20,8 @@ const StudentsTable = () => {
   const [total, setTotal] = useState();
   const [limit, setLimit] = useState(searchParams.get("limit"));
   const [skip, setSkip] = useState(searchParams.get("skip"));
-  const [search, setSearch] = useState(searchParams.get("q"));
-  const [updated, setUpdated] = useState(searchParams.get("q"));
+  const [search, setSearch] = useState(searchParams.get("q") || "");
+  const [updated, setUpdated] = useState(searchParams.get("q") || "");
 
   const fecthUsers = async () => {
     setLoading(true);
