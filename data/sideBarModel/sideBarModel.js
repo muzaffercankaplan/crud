@@ -1,34 +1,32 @@
-import { Course, Home, Payment, Report, Settings, Students } from "../imports";
-
 export const sideBarModel = [
   {
     title: "Home",
     href: "/home",
-    icon: Home,
+    icon: "/sidebar/Home.svg",
   },
   {
     title: "Course",
     href: "/course",
-    icon: Course,
+    icon: "/sidebar/Course.svg",
   },
   {
     title: "Students",
     href: "/students",
-    icon: Students,
+    icon: "/sidebar/Students.svg",
   },
   {
     title: "Payment",
     href: "/payment",
-    icon: Payment,
+    icon: "/sidebar/Payment.svg",
   },
   {
     title: "Report",
     href: "/report",
-    icon: Report,
+    icon: "/sidebar/Report.svg",
   },
   {
     title: "Settings",
     href: "/settings",
-    icon: Settings,
+    icon: "/sidebar/Settings.svg",
   },
 ];

@@ -1,28 +1,26 @@
-import { HomeCourse, HomePayment, HomeStudents, Users } from "../imports";
-
 export const HomePageModel = [
   {
     title: "Students",
     value: "155",
-    icon: HomeStudents,
+    icon: "/home/HomeStudents.svg",
     color: "#F0F9FF",
   },
   {
     title: "Course",
     value: "13",
-    icon: HomeCourse,
+    icon: "/home/HomeCourse.svg",
     color: "#FEF6FB",
   },
   {
     title: "Paymnets",
     value: "556,000",
-    icon: HomePayment,
+    icon: "/home/HomePayment.svg",
     color: "#FEFBEC",
   },
   {
     title: "Users",
     value: "3",
-    icon: Users,
+    icon: "/Users.svg",
     color: undefined,
   },
 ];

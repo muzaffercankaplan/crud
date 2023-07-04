@@ -13,7 +13,7 @@ const Page = () => {
           key={title}
         >
           <div>
-            <Image alt={title} src={icon} />
+            <Image alt={title} src={icon} width={35} height={35} />
             <p
               className={styles.home__title}
               style={{ color: color ? undefined : "#fff" }}
