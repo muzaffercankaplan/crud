@@ -14,6 +14,7 @@ const Header = () => {
         onClick={() => setcloseSidebar((prev) => !prev)}
       >
         <Image
+          loading="lazy"
           alt="arrow"
           src={"header/left_arrow.svg"}
           width={20}
@@ -21,7 +22,13 @@ const Header = () => {
         />
       </div>
       <div>
-        <Image alt="arrow" src={"header/notion.svg"} width={20} height={20} />
+        <Image
+          loading="lazy"
+          alt="arrow"
+          src={"header/notion.svg"}
+          width={20}
+          height={20}
+        />
       </div>
     </div>
   );

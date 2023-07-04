@@ -46,7 +46,13 @@ const SideBar = () => {
                 }
                 key={title}
               >
-                <Image alt={title} src={icon} height={20} width={20} />
+                <Image
+                  loading="lazy"
+                  alt={title}
+                  src={icon}
+                  height={20}
+                  width={20}
+                />
                 <p>{title}</p>
               </Link>
             ))}{" "}
@@ -54,6 +60,7 @@ const SideBar = () => {
           <p onClick={logout} className="sidebar__logout">
             Logout{" "}
             <Image
+              loading="lazy"
               alt="logout"
               src="/sidebar/Logout.svg"
               height={20}
@@ -80,12 +87,19 @@ const SideBar = () => {
                 href={href}
                 key={title}
               >
-                <Image alt={title} src={icon} height={20} width={20} />
+                <Image
+                  loading="lazy"
+                  alt={title}
+                  src={icon}
+                  height={20}
+                  width={20}
+                />
               </Link>
             ))}
           </div>
           <p onClick={logout} className="sidebar__logout">
             <Image
+              loading="lazy"
               alt="logout"
               src="/sidebar/Logout.svg"
               height={20}

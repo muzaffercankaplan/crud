@@ -60,7 +60,13 @@ const TableFooter = ({ total, limit, setLimit, skip, setSkip }) => {
               : pathname + "?" + createQueryString("skip", +skip - +limit)
           }
         >
-          <Image alt="arrow" src={"/left.svg"} width={14} height={14} />
+          <Image
+            loading="lazy"
+            alt="arrow"
+            src={"/left.svg"}
+            width={14}
+            height={14}
+          />
         </Link>
         <Link
           onClick={() => {
@@ -75,6 +81,7 @@ const TableFooter = ({ total, limit, setLimit, skip, setSkip }) => {
           }
         >
           <Image
+            loading="lazy"
             alt="arrow"
             style={{ rotate: "180deg" }}
             src={"/left.svg"}

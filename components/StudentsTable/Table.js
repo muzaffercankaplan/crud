@@ -26,6 +26,7 @@ const Table = ({ users, setUserId, setOpenModal, handeleDeleteUser }) => {
             <tr key={index}>
               <td>
                 <Image
+                  loading="lazy"
                   alt={user?.firstName}
                   src={user?.image}
                   width={65}
@@ -41,6 +42,7 @@ const Table = ({ users, setUserId, setOpenModal, handeleDeleteUser }) => {
               <td>{user?.company?.name}</td>
               <td className="table__actions">
                 <Image
+                  loading="lazy"
                   alt={user?.firstName}
                   onClick={() => {
                     setUserId(user?.id);
@@ -51,6 +53,7 @@ const Table = ({ users, setUserId, setOpenModal, handeleDeleteUser }) => {
                   height={19}
                 />
                 <Image
+                  loading="lazy"
                   alt={user?.firstName}
                   onClick={() => handeleDeleteUser(user?.id)}
                   src={"trash.svg"}
