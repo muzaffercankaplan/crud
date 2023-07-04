@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 const Page = () => {
   return (
     <div className={styles.home__container}>
-      {HomePageModel.map(({ title, value, color, icon }) => (
+      {HomePageModel.map(({ title, value, color, icon, width, height }) => (
         <div
           style={{ backgroundColor: color }}
           className={`${styles.home__card} ${
@@ -17,8 +17,8 @@ const Page = () => {
               loading="lazy"
               alt={title}
               src={icon}
-              width={35}
-              height={35}
+              width={width}
+              height={height}
             />
             <p
               className={styles.home__title}
