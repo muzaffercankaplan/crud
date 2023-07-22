@@ -117,7 +117,7 @@ const StudentsTable = () => {
       <TableHeader
         search={search}
         setSearch={setSearch}
-        updated={updated}
+        setSkip={setSkip}
         setUpdated={setUpdated}
       />
       <div

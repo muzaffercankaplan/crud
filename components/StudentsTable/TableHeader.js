@@ -5,7 +5,7 @@ import { useCallback, useState } from "react";
 import AddUsersFrom from "../Form/AddUsersFrom";
 import "./tableHeader.css";
 
-const TableHeader = ({ search, setSearch, updated, setUpdated }) => {
+const TableHeader = ({ search, setSearch, setSkip, setUpdated }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -47,6 +47,7 @@ const TableHeader = ({ search, setSearch, updated, setUpdated }) => {
 
   const handleChange = (event) => {
     setSearch(event.target.value);
+    setSkip(0);
   };
 
   const handleKeyDown = (event) => {

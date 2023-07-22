@@ -84,7 +84,11 @@ const SideBar = () => {
             {sideBarModel.map(({ title, href, icon }) => (
               <Link
                 className={pathName == href && "linkContainerActive_close"}
-                href={href}
+                href={
+                  href === "/students"
+                    ? { pathname: href, query: { limit: 6, skip: 0 } }
+                    : href
+                }
                 key={title}
               >
                 <Image
